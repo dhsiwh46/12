@@ -115,14 +115,11 @@ const FavoriteCard = memo(({ mail, onDelete, onCopy, copiedId }: FavoriteCardPro
     <div className="bg-black/30 rounded-[18px] overflow-hidden border border-white/20 shadow-xl p-4 space-y-3 transition-all duration-200 hover:border-white/30">
       <div className="flex items-start justify-between gap-3">
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-1">
-            <Icon name="star" className="w-4 h-4 text-[#FFD700] shrink-0 drop-shadow-md" />
-            <h3 className="text-[17px] font-bold text-white tracking-tight drop-shadow-md truncate">
-              {mail.name}
-            </h3>
-          </div>
+          <h3 className="text-[17px] font-bold text-white tracking-tight drop-shadow-md truncate">
+            {mail.name}
+          </h3>
           {mail.description && (
-            <p className="text-[13px] text-white/60 drop-shadow-sm">
+            <p className="text-[13px] text-white/60 mt-1 drop-shadow-sm">
               {mail.description}
             </p>
           )}
